@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0; }
+
+#containerGrid {
+  display: grid;
+  grid-template-rows: 100px auto 50px;
+  min-height: 100vh; }
+
+#header {
+  background-color: black; }
+
+#footer {
+  background-color: black; }
+
+.flex-container {
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly; }
+
+.bar {
+  color: white;
+  display: none; }
+  @media all and (max-width: 673px) {
+    .bar .bar {
+      display: block;
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 20px; } }
+
+.nav li {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 10px; }
+  .nav li:hover {
+    transform: scale(1.05); }
+
+.nav a {
+  color: white;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 20px;
+  text-decoration: none; }
+  @media all and (max-width: 673px) {
+    .nav a {
+      display: none; } }
+
+.main {
+  background: linear-gradient(to left, #000080, black); }
+  .main p {
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    color: white;
+    font-size: 25px;
+    padding-top: 20px; }
+    @media all and (max-width: 673px) {
+      .main p {
+        font-size: 1rem;
+        line-height: 1.5; } }
+    @media all and (max-width: 992px) {
+      .main p {
+        font-size: 1rem;
+        line-height: 1.5; } }
+  .main img {
+    width: 350px;
+    height: 300px;
+    padding-right: 15px;
+    padding-top: 10px; }
+    .main img:hover {
+      transform: scale(1.05); }
+
+.imagenes {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  @media all and (max-width: 673px) {
+    .imagenes {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; } }
+  @media all and (max-width: 992px) {
+    .imagenes {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; } }
+
+.piePagina {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; }
+  .piePagina a {
+    color: white;
+    text-decoration: none; }
